@@ -46,15 +46,6 @@ server.post('/deposite', async (req,res,next) => {
   res.send(response)
 })
 
-
-
-
-// getBalance()
-
-
-
-// deposity('200000')
-
 WRContact.on("LogDepositMade", (sender, amount)=> {
  console.log(`User : ${sender} has deposit ${amount}`);
 })
